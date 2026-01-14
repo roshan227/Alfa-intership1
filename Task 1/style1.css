@@ -1,0 +1,48 @@
+html { scroll-behavior: smooth; }
+
+body { font-family: Arial, sans-serif; }
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero span { color: #ffc107; }
+
+section { padding: 80px 0; }
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+.project {
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
