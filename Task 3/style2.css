@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #000;
+    color: white;
+}
+
+/* Layout */
+.app {
+    display: flex;
+    height: 100vh;
+    padding-bottom: 90px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #000;
+    padding: 25px;
+}
+
+.spotify-logo {
+    color: #1db954;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #b3b3b3;
+    padding: 12px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+    color: white;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 30px;
+    background: linear-gradient(to bottom, #1a1a1a, #121212);
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Playlists */
+.playlist-row {
+    display: flex;
+    gap: 20px;
+}
+
+.playlist-card {
+    display: flex;
+    align-items: center;
+    background: #181818;
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.playlist-card:hover {
+    background: #282828;
+}
+
+.playlist-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.playlist-card span {
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+/* Player */
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-top: 1px solid #282828;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.song-info img {
+    width: 55px;
+}
+
+.song {
+    font-size: 14px;
+}
+
+.artist {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#play {
+    font-size: 28px;
+}
